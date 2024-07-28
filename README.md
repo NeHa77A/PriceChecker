@@ -9,6 +9,36 @@ Tabulate same data in two different tables, use any database.
 ### Solution
 In this project, we are involved in scraping mobile phone prices from Reliance Digital and Flipkart, cleaning the data, storing it in a MySQL database, and comparing prices between the two sources. The results are visualized and displayed on a web interface using Flask.
 
+```
+project/
+├── src/
+│   ├── PriceChecker/
+│   │   ├── components/
+│   │   │   ├── __init__.py
+│   │   │   ├── data_ingestion.py
+│   │   │   ├── data_validation.py
+│   │   │   ├── data_store.py
+│   │   │   └── visualization.py
+│   │   └── constant/
+│   │       ├── __init__.py
+│   │       └── database.py
+├── artifact/
+│   ├── data_ingestion/
+│   │   ├── reliance_data.csv
+│   │   └── flipkart_data.csv
+│   └── data_validation/
+│       ├── reliance_data.csv
+│       ├── flipkart_data.csv
+│       └── matched_models_with_prices.csv
+├── api.py
+└── main.py
+|── templates/
+│       ├── index.html
+│       └── results.html
+└── static/
+        └── price_comparison.png
+```
+
 
 ## Run the Project
 ### Step 1-: Clone the Repository
