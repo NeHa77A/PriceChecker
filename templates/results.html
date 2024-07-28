@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Price Comparison Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+            color: #007bff;
+        }
+        p {
+            text-align: center;
+            color: #666;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 80%;
+            height: auto;
+            border: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Price Comparison Results</h1>
+
+    {% if data %}
+        <table>
+            <tr>
+                <th>Reliance Model</th>
+                <th>Reliance Price</th>
+                <th>Flipkart Model</th>
+                <th>Flipkart Price</th>
+            </tr>
+            {% for row in data %}
+            <tr>
+                <td>{{ row['Reliance model'] }}</td>
+                <td>{{ row['Reliance Price'] }}</td>
+                <td>{{ row['Flipkart Model'] }}</td>
+                <td>{{ row['Flipkart Price'] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <h2>Price Comparison Graph</h2>
+        <img src="{{ img_path }}" alt="Price Comparison Graph">
+    {% else %}
+        <p>No matching models found.</p>
+    {% endif %}
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Price Comparison Results</title>
+</head>
+<body>
+    <h1>Price Comparison Results</h1>
+
+    {% if data %}
+        <table border="1">
+            <tr>
+                <th>Reliance Model</th>
+                <th>Reliance Price</th>
+                <th>Flipkart Model</th>
+                <th>Flipkart Price</th>
+            </tr>
+            {% for row in data %}
+            <tr>
+                <td>{{ row['Reliance model'] }}</td>
+                <td>{{ row['Reliance Price'] }}</td>
+                <td>{{ row['Flipkart Model'] }}</td>
+                <td>{{ row['Flipkart Price'] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <h2>Price Comparison Graph</h2>
+        <img src="{{ img_path }}" alt="Price Comparison Graph">
+    {% else %}
+        <p>No matching models found.</p>
+    {% endif %}
+</body>
+</html> -->

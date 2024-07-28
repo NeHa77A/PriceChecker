@@ -1,0 +1,8 @@
+pandas
+beautifulsoup4 
+requests
+selenium
+sqlalchemy 
+mysql-connector-python
+matplotlib
+-e .
