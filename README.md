@@ -42,3 +42,4 @@ Open your browser and go to http://127.0.0.1:5000/.
 Submit Query:
 
 Enter a query for the mobile phone model and submit the form to scrape, compare, and visualize the data.
+
