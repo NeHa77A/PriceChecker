@@ -38,7 +38,8 @@ project/
 └── static/
         └── price_comparison.png
 ```
-
+## Architecture
+![](https://raw.githubusercontent.com/NeHa77A/PriceChecker/main/architecture.png)
 
 ## Run the Project
 ### Step 1-: Clone the Repository
