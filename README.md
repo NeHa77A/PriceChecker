@@ -74,6 +74,6 @@ Submit Query:
 
 Enter a query for the mobile phone model and submit the form to scrape, compare, and visualize the data.
 
-![](https://raw.githubusercontent.com/NeHa77A/PriceChecker/main/output.png)
+![](https://raw.githubusercontent.com/NeHa77A/PriceChecker/main/output/output.png)
 
 ![](https://raw.githubusercontent.com/NeHa77A/PriceChecker/main/output/visulization.png)
