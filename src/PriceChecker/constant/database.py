@@ -1,6 +1,6 @@
 db_config = {
 "HOST" :'localhost',
 "USER": 'root',
-"PASSWORD": 'Neha@123',
+"PASSWORD": 'your_password',
 "DATABASE_NAME":'price_data',
 "PORT": 3306 }
